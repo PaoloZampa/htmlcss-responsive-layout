@@ -6,6 +6,13 @@
     box-sizing: border-box;
 }
 
+*[class^="card"] {
+    -webkit-box-shadow: 5px 5px 10px 0px #000000;
+    -moz-box-shadow: 5px 5px 10px 0px #000000;
+    -o-box-shadow: 5px 5px 10px 0px #000000;
+    box-shadow: 5px 5px 10px 0px #000000;
+}
+
 :root {
     --white: rgba(254, 255, 254, 1);
     --dark: rgba(50, 51, 50, 1);
@@ -269,6 +276,10 @@ i.fa-solid.fa-arrow-down-long {
     padding: 2rem 1rem;
     border-radius: 50px;
     margin: 2rem 0;
+    -webkit-box-shadow: 5px 5px 10px 0px #000000;
+    -moz-box-shadow: 5px 5px 10px 0px #000000;
+    -o-box-shadow: 5px 5px 10px 0px #000000;
+    box-shadow: 5px 5px 10px 0px #000000;
 }
 
 .testimonial p {
@@ -306,6 +317,7 @@ i.fa-solid.fa-arrow-down-long {
 
 #benefits {
     background-color: var(--violet);
+    padding-bottom: 3rem;
 }
 
 .h1_bn {
@@ -321,6 +333,10 @@ i.fa-solid.fa-arrow-down-long {
     padding: 2rem 3rem;
     border-radius: 20px;
     margin: 1rem;
+    -webkit-box-shadow: 5px 5px 10px 0px #000000;
+    -moz-box-shadow: 5px 5px 10px 0px #000000;
+    -o-box-shadow: 5px 5px 10px 0px #000000;
+    box-shadow: 5px 5px 10px 0px #000000;
 }
 
 .benefits_card h1 {
@@ -348,7 +364,53 @@ i.fa-solid.fa-arrow-down-long {
     border-radius: 40px;
 }
 
+/* about */
 
+#about{
+    margin: 6rem 1rem;
+}
+
+#about h1 {
+    font-size: 4rem;
+    color: var(--violet);
+}
+
+#about p {
+    margin: 2rem 0;
+}
+
+.img4{
+    background-image: url(../img/about.jpg);
+    text-align: end;
+}
+
+.avatar i{
+    position: absolute;
+    color: var(--violet);
+}
+
+#about .avatar{
+    margin: 2rem 0;
+}
+
+#about span{
+    color: var(--violet);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.btn_about{
+    margin: 2rem 0;
+}
+
+#about a{
+    color: var(--white);
+    background-color: var(--violet);
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    text-decoration: none;
+    margin-top: 4rem;
+}
 /* #endregion main */
 
 
@@ -422,6 +484,14 @@ i.fa-solid.fa-arrow-down-long {
     .testimonial {
         flex-direction: row;
         align-items: center;
+    }
+
+    /* about */
+
+    #about .avatar {
+        margin-bottom: 2rem;
+        margin-top: 0;
+        width: 100%;
     }
 
 }
@@ -513,11 +583,6 @@ i.fa-solid.fa-arrow-down-long {
         font-style: italic;
     }
 
-    /* avatar */
-
-    .avatar {
-        width: 30%;
-    }
 
 }
 
