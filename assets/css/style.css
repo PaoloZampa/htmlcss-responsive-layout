@@ -245,6 +245,21 @@ i.fa-solid.fa-arrow-down-long {
     border-radius: 50%;
     margin: 2rem;
 }
+
+
+/* testimonials */
+
+.section_heading{
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.section_heading h1{
+    color: var(--violet);
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+
 /* #endregion main */
 
 
