@@ -366,11 +366,12 @@ i.fa-solid.fa-arrow-down-long {
 
 /* about */
 
-#about{
+#about {
     margin: 6rem 1rem;
 }
 
 #about h1 {
+    line-height: 4rem;
     font-size: 4rem;
     color: var(--violet);
 }
@@ -379,31 +380,31 @@ i.fa-solid.fa-arrow-down-long {
     margin: 2rem 0;
 }
 
-.img4{
+.img4 {
     background-image: url(../img/about.jpg);
     text-align: end;
 }
 
-.avatar i{
+.avatar i {
     position: absolute;
     color: var(--violet);
 }
 
-#about .avatar{
+#about .avatar {
     margin: 2rem 0;
 }
 
-#about span{
+#about span {
     color: var(--violet);
     font-size: 2rem;
     font-weight: 700;
 }
 
-.btn_about{
+.btn_about {
     margin: 2rem 0;
 }
 
-#about a{
+#about a {
     color: var(--white);
     background-color: var(--violet);
     padding: 0.5rem 1rem;
@@ -414,36 +415,37 @@ i.fa-solid.fa-arrow-down-long {
 
 /* call to action */
 
-#call_to_action{
+#call_to_action {
     text-align: center;
     background-color: var(--violet);
     padding: 5rem 1rem;
 }
 
-.start{
+.start {
     font-size: 1.5rem;
     color: rgba(255, 255, 255, 0.575);
 }
 
-#call_to_action h2{
+#call_to_action h2 {
     color: var(--white);
     font-size: 2rem;
     padding: 2rem 0;
     line-height: 3rem;
 }
 
-#call_to_action h1{
+#call_to_action h1 {
+    line-height: 5rem;
     font-size: 5rem;
     color: #fdc15f;
     padding-bottom: 4rem;
 }
 
-#call_to_action p{
+#call_to_action p {
     color: var(--white);
     margin-bottom: 2rem;
 }
 
-.btn_cta{
+.btn_cta {
     background-color: var(--white);
     padding: 1rem 3rem;
     color: var(--violet);
@@ -451,15 +453,33 @@ i.fa-solid.fa-arrow-down-long {
     font-weight: 600;
 }
 
-.copyright{
+.copyright {
     padding-top: 2rem;
 }
 
-.copyright a{
+.copyright a {
     color: var(--white);
 }
 
 /* #endregion main */
+
+/* #region footer */
+
+#app_footer {
+    background-color: var(--dark);
+    color: var(--white);
+    text-align: center;
+}
+
+#app_footer a {
+    color: var(--violet);
+}
+
+#app_footer p {
+    padding: 3rem 2rem;
+}
+
+/* #endregion footer */
 
 
 /* #region mediaquery */
@@ -542,15 +562,15 @@ i.fa-solid.fa-arrow-down-long {
         width: 100%;
     }
 
-    
+
 }
 
 @media screen and (min-width: 1200px) {
-    
+
     .col_lg_1 {
         width: calc(100% / 12 * 1);
     }
-    
+
     .col_lg_2 {
         width: calc(100% / 12 * 2);
     }
@@ -558,7 +578,7 @@ i.fa-solid.fa-arrow-down-long {
     .col_lg_3 {
         width: calc(100% / 12 * 3);
     }
-    
+
     .col_lg_4 {
         width: calc(100% / 12 * 4);
     }
@@ -574,48 +594,48 @@ i.fa-solid.fa-arrow-down-long {
     .col_lg_7 {
         width: calc(100% / 12 * 7);
     }
-    
+
     .col_lg_8 {
         width: calc(100% / 12 * 8);
     }
-    
+
     .col_lg_9 {
         width: calc(100% / 12 * 9);
     }
-    
+
     .col_lg_10 {
         width: calc(100% / 12 * 10);
     }
-    
+
     .col_lg_11 {
         width: calc(100% / 12 * 11);
     }
-    
+
     .col_lg_12 {
         width: calc(100% / 12 * 12);
     }
-    
+
     .col_12.col_md_12.col_lg_6 {
         margin: 0;
     }
-    
+
     /* demo */
-    
+
     .col_12.col_md_6.d_flex {
         height: 100%;
         margin-top: 5rem;
     }
-    
+
     .card_lg img {
         height: 100%;
     }
-    
+
     /* planning */
-    
+
     #planning .col_lg_6 {
         padding: 2rem;
     }
-    
+
     .card_app {
         margin-top: 15rem;
     }
@@ -627,18 +647,19 @@ i.fa-solid.fa-arrow-down-long {
     .strategic h2 {
         margin-top: 7rem;
     }
-    
+
     .card_app p {
         font-style: italic;
     }
-    
+
     /* call to action */
-    
-    #call_to_action .container{
+
+    #call_to_action .container,
+    #app_footer .container {
         width: 40%;
         max-width: 500px;
     }
-    
+
 }
 
 /* #endregion mediaquery */
