@@ -263,20 +263,42 @@ i.fa-solid.fa-arrow-down-long {
 .testimonial {
     flex-direction: column;
     text-align: center;
+    align-items: center;
     background-color: var(--violet);
     padding: 2rem 1rem;
     border-radius: 50px;
     margin: 2rem 0;
 }
 
-.testimonial img {
-    width: 80%;
-    aspect-ratio: 1/1;
-    border-radius: 50%;
-}
-
 .testimonial p {
     color: var(--white);
+    padding: 2rem 1rem;
+}
+
+.bio strong{
+    color: var(--white);
+    font-size: 1.5rem;
+}
+
+.avatar {
+    width: 60%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    padding: 1rem 2rem;
+}
+
+.img1 {
+    background-image: url(../img/testimonial1.jpg);
+}
+
+.img2 {
+    background-image: url(../img/testimonial2.jpg);
+}
+
+.img3 {
+    background-image: url(../img/testimonial3.jpg);
 }
 
 /* #endregion main */
@@ -411,6 +433,12 @@ i.fa-solid.fa-arrow-down-long {
     }
 
     /* demo */
+
+    .col_12.col_md_6.d_flex {
+        height: 100%;
+        margin-top: 5rem;
+    }
+
     .card_lg img {
         height: 100%;
     }
@@ -435,6 +463,12 @@ i.fa-solid.fa-arrow-down-long {
 
     .card_app p {
         font-style: italic;
+    }
+
+    /* avatar */
+
+    .avatar {
+        width: 30%;
     }
 
 }
