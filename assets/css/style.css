@@ -10,7 +10,7 @@
     --white: rgba(254, 255, 254, 1);
     --dark: rgba(50, 51, 50, 1);
     --violet: rgba(151, 146, 228, 1);
-    --blue: rgba(0, 133, 252, 1; )
+    --blue: rgba(0, 133, 252, 1);
 }
 
 /* #endregion common */
@@ -21,6 +21,10 @@
 .row {
     display: flex;
     flex-wrap: wrap;
+}
+
+.d_flex{
+    display: flex;
 }
 
 .container {
@@ -89,17 +93,47 @@
 
 /* #region debug */
 
-.debug [class^="col"]{
+.debug [class^="col"] {
     height: 300px;
     border: 1px solid grey;
 }
 
 /* #endregion debug */
 
+/* #region header */
+
+#app_header{
+    background-color: var(--blue);
+    padding: 0.5rem 0;
+}
+
+#app_header li{
+    list-style: none;
+    margin: 0 1rem;
+}
+
+#app_header a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+#app_header .container{
+    justify-content: space-between;
+    align-items: center;
+}
+
+#app_header .btn{
+    background-color: var(--white);
+    color: var(--dark);
+    padding: 0.3rem 1rem;
+    border-radius: 15px;
+}
+
+/* #endregion header */
 
 /* #region mediaquery */
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
 
     .col_md_1 {
         width: calc(100% / 12 * 1);
@@ -152,7 +186,7 @@
 
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
 
     .col_lg_1 {
         width: calc(100% / 12 * 1);
