@@ -18,6 +18,10 @@ body{
     font-family: 'PT Sans', sans-serif;
 }
 
+main{
+    line-height: 2rem;
+}
+
 /* #endregion common */
 
 
@@ -202,10 +206,45 @@ i.fa-brands.fa-apple {
     color: var(--blue);
 }
 
-.demo p{
-    line-height: 2rem;
+
+/* planning */
+
+#planning{
+    background-color: var(--violet);
+    padding: 3rem 0;
 }
 
+#planning img{
+    width: 100%
+}
+
+#planning h2{
+    color: var(--white);
+    font-size: 2.5rem;
+    padding: 3rem 0;
+}
+
+.strategic p{
+    color: var(--white);
+}
+
+.card_app{
+    padding: 2rem 1rem;
+    margin: 2rem auto;
+    background-color: var(--white);
+    border-radius: 50px;
+    text-align: center;
+}
+
+i.fa-solid.fa-arrow-down-long {
+    color: var(--dark);
+    background-color: var(--violet);
+    padding: 1rem;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin: 2rem;
+}
 /* #endregion main */
 
 
@@ -330,8 +369,31 @@ i.fa-brands.fa-apple {
         margin: 0;
     }
 
+    /* demo */
     .card_lg img{
         height: 100%;
+    }
+
+    /* planning */
+
+    #planning .col_lg_6{
+        padding: 2rem;
+    }
+
+    .card_app {
+        margin-top: 15rem;
+    }
+
+    .strategic{
+        padding-top: 3rem;
+    }
+
+    .strategic h2{
+        margin-top: 7rem;
+    }
+
+    .card_app p{
+        font-style: italic;
     }
     
 }
