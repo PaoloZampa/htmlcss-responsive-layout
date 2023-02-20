@@ -14,11 +14,11 @@
     --lightblue: #b5ddff;
 }
 
-body{
+body {
     font-family: 'PT Sans', sans-serif;
 }
 
-main{
+main {
     line-height: 2rem;
 }
 
@@ -209,26 +209,26 @@ i.fa-brands.fa-apple {
 
 /* planning */
 
-#planning{
+#planning {
     background-color: var(--violet);
     padding: 3rem 0;
 }
 
-#planning img{
+#planning img {
     width: 100%
 }
 
-#planning h2{
+#planning h2 {
     color: var(--white);
     font-size: 2.5rem;
     padding: 3rem 0;
 }
 
-.strategic p{
+.strategic p {
     color: var(--white);
 }
 
-.card_app{
+.card_app {
     padding: 2rem 1rem;
     margin: 2rem auto;
     background-color: var(--white);
@@ -249,15 +249,34 @@ i.fa-solid.fa-arrow-down-long {
 
 /* testimonials */
 
-.section_heading{
+.section_heading {
     text-align: center;
     padding: 3rem 0;
 }
 
-.section_heading h1{
+.section_heading h1 {
     color: var(--violet);
     font-size: 2rem;
     margin: 2rem 0;
+}
+
+.testimonial {
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--violet);
+    padding: 2rem 1rem;
+    border-radius: 50px;
+    margin: 2rem 0;
+}
+
+.testimonial img {
+    width: 80%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+.testimonial p {
+    color: var(--white);
 }
 
 /* #endregion main */
@@ -328,6 +347,13 @@ i.fa-solid.fa-arrow-down-long {
         margin: 2rem auto;
     }
 
+    /* testimonials */
+
+    .testimonial {
+        flex-direction: row;
+        align-items: center;
+    }
+
 }
 
 @media screen and (min-width: 1200px) {
@@ -385,13 +411,13 @@ i.fa-solid.fa-arrow-down-long {
     }
 
     /* demo */
-    .card_lg img{
+    .card_lg img {
         height: 100%;
     }
 
     /* planning */
 
-    #planning .col_lg_6{
+    #planning .col_lg_6 {
         padding: 2rem;
     }
 
@@ -399,18 +425,18 @@ i.fa-solid.fa-arrow-down-long {
         margin-top: 15rem;
     }
 
-    .strategic{
+    .strategic {
         padding-top: 3rem;
     }
 
-    .strategic h2{
+    .strategic h2 {
         margin-top: 7rem;
     }
 
-    .card_app p{
+    .card_app p {
         font-style: italic;
     }
-    
+
 }
 
 /* #endregion mediaquery */
