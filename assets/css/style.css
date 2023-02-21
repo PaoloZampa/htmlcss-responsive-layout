@@ -127,13 +127,22 @@ main {
     padding: 0.5rem 0;
 }
 
+#app_header ul {
+    display: none;
+}
+
+#app_header .container{
+    padding: 0 1rem;
+}
+
 #app_header li {
     list-style: none;
     margin: 0 1rem;
 }
 
 #app_header a,
-.demo a {
+.demo a,
+.menu {
     text-decoration: none;
     color: var(--white);
 }
@@ -445,6 +454,10 @@ i.fa-solid.fa-arrow-down-long {
     margin-bottom: 2rem;
 }
 
+#call_to_action a {
+    text-decoration: none;
+}
+
 .btn_cta {
     background-color: var(--white);
     padding: 1rem 3rem;
@@ -480,7 +493,6 @@ i.fa-solid.fa-arrow-down-long {
 }
 
 /* #endregion footer */
-
 
 /* #region mediaquery */
 
@@ -617,6 +629,16 @@ i.fa-solid.fa-arrow-down-long {
 
     .col_12.col_md_12.col_lg_6 {
         margin: 0;
+    }
+
+    /* header */
+
+    #app_header ul {
+        display: flex;
+    }
+
+    .menu {
+        display: none;
     }
 
     /* demo */
