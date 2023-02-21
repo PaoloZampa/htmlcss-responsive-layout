@@ -131,7 +131,7 @@ main {
     display: none;
 }
 
-#app_header .container{
+#app_header .container {
     padding: 0 1rem;
 }
 
@@ -142,7 +142,7 @@ main {
 
 #app_header a,
 .demo a,
-.menu {
+.menu_icon {
     text-decoration: none;
     color: var(--white);
 }
@@ -637,7 +637,7 @@ i.fa-solid.fa-arrow-down-long {
         display: flex;
     }
 
-    .menu {
+    .menu_icon {
         display: none;
     }
 
